@@ -1,6 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    line-height: 1.5;
+    accent-color: var(--secondary);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    font-size: 1.15rem;
+
+    --yellow: #FFC239;
+    --black: #151618;
+    --white: #FFF;
+
+    --primary: var(--yellow);
+    --text: var(--black);
+    --bg: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --bg: var(--yellow);
+        --primary: var(--text);
+        --text: var(--black);
+    }
+}
+
+:focus-visible {
+    outline: 3px solid var(--text);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 7px var(--secondary);
+}
+
+button, [role=button] {
+    background-color: var(--text);
+    color: var(--white);
+    font-weight: bold;
+    border: 2px solid var(--text);
+    padding: 1rem;
+    
+    white-space: nowrap;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    font-size: 1.15rem;
+    text-decoration: none !important;
+}
+
+button, a {
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.7rem;
 }
