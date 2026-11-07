@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
+import { DatePipe } from '@angular/common';
 
 @Component({
-  imports: [RouterOutlet, RouterModule],
+  imports: [RouterOutlet, RouterModule, DatePipe],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
