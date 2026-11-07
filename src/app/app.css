@@ -53,9 +53,6 @@ nav ul li a {
     width: 64px;
     fill: var(--text);
 }
-#download-cv {
-    color: var(--bg);
-}
 
 [role=button] {
     margin-left: auto;
