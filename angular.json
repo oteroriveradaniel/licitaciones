@@ -10,7 +10,8 @@
       "i18n": {
         "sourceLocale": "es-ES", 
         "locales": {
-          "en-US": "src/locale/messages.en.xlf"
+          "en-US": "src/locale/messages.en.xlf", 
+          "gl-ES": "src/locale/messages.gl.xlf"
         }
       },
       "projectType": "application",
@@ -23,7 +24,9 @@
           "builder": "@angular/build:application",
           "options": {
             "localize": [ 
-              "en-US"
+              "en-US",
+              "es-ES", 
+              "gl-ES"
             ], 
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",

@@ -2,11 +2,36 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="es-ES" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="5003254313850920652" datatype="html">
+        <source>Licitaciones</source>
+        <target>Licitaciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="684018943408500259" datatype="html">
+        <source> Descargar CV</source>
+        <target> Descargar CV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5461361864106246695" datatype="html">
+        <source>Última actualización <x id="INTERPOLATION" equiv-text="{{&quot;11/07/2026&quot; | date}}"/></source>
+        <target>Última actualización <x id="INTERPOLATION" equiv-text="{{&quot;11/07/2026&quot; | date}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5949841979829170796" datatype="html">
         <source>Desarrollador y diseñador web.</source>
+        <target>Desarrollador y diseñador web.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/inicio/inicio.html</context>
-          <context context-type="linenumber">10,11</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
     </body>

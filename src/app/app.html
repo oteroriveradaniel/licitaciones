@@ -9,13 +9,14 @@
     <nav>
         <ul>
             <li>
-                <a 
+                <a i18n
                 [tabIndex]="0"
                 routerLink="/licitaciones">Licitaciones</a>
             </li>
         </ul>
     </nav>
-    <a id="download-cv" role="button" target="_blank"
+    <a i18n 
+        id="download-cv" role="button" target="_blank"
         href="https://drive.google.com/file/d/1f1QhxBHh43oE5x4uvPkJ-4OaRcZcEJgA/view?usp=sharing">
         Descargar CV</a>
 </header>
@@ -23,5 +24,5 @@
     <router-outlet />
 </main>
 <footer>
-    <small>Última actualización {{"11/07/2026" | date}}</small>
+    <small i18n>Última actualización {{"11/07/2026" | date}}</small>
 </footer>
