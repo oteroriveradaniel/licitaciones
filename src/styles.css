@@ -22,6 +22,7 @@ body {
     --primary: var(--yellow);
     --text: var(--black);
     --bg: var(--white);
+    --text-on-primary: var(--black);
 }
 
 :focus-visible {
@@ -40,6 +41,7 @@ body {
         --bg: var(--yellow);
         --primary: var(--black);
         --text: var(--black);
+        --text-on-primary: var(--yellow);
     }
 
     ::selection {
@@ -130,7 +132,7 @@ h3 {
 
 input {
     background-color: transparent;
-    border: 2px solid var(--black);
+    border: 2px solid var(--text);
     padding: .5rem 1rem;
 
     font-size: 1.15rem;
@@ -139,7 +141,7 @@ input {
 select, 
 datalist {
     background-color: transparent;
-    border: 1px solid var(--black);
+    border: 2px solid var(--text);
     padding: .5rem 1rem;
     font-size: 1rem;
     appearance: none;
@@ -154,11 +156,11 @@ datalist:after {
     right: 0;
     width: 24px;
     height: 24px;
-    border: 8px solid var(--black);
+    border: 8px solid var(--text);
 }
 
 hr {
-    border-color: var(--black);
+    border: 1px solid var(--text);
 }
 
 @media screen and (max-width: 800px) {
