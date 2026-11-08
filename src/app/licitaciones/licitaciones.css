@@ -1,0 +1,38 @@
+menu {
+    display: flex;
+    gap: 2.5rem;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+#resumen {
+    display: flex;
+    border-radius: 6px;
+    justify-content: space-between;
+    gap: .5rem;
+    font-size: 1.85rem;
+}
+
+label {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1000px;
+}
+
+form div {
+    display: flex;
+    gap: 1rem;
+}
+
+form h3 {
+    width: 150px;
+}

@@ -1,16 +1,42 @@
-<menu>
-    <label for="">
-        <input type="radio" value="configuracion">
-        Configuración
-    </label>
-    <label for="">
-        <input type="radio" value="competencia">
-        Competencia
-    </label>
-    <label for="">
-        <input type="radio" value="busqueda">
-        Búsqueda
-    </label>
-</menu>
-<h2>{{ 50320 | number }}</h2>
-<h2>{{ 180400.08 | currency }}</h2>
+<div id="resumen">
+    <h2>{{ 50320 | number }}<br>licitaciones.</h2>
+    <h2>{{ 180400.08 | currency }}<br>importe medio.</h2>
+</div>
+<hr>
+<form action="">
+    <div>
+        <h3>Resultados.</h3>
+        <label for="">
+            <input type="radio" name="vista" value="perfil">
+            Perfil.
+        </label>
+        <label for="">
+            <input type="radio" name="vista" value="competidores">
+            Competidores.
+        </label>
+        <label for="">
+            <input type="radio" name="vista" value="libre">
+            Libre.
+        </label>
+    </div>
+    <div>
+        <h3>Búsqueda.</h3>
+        <select name="" id="">
+            <option value="">Estado</option>
+            <option value="">Categoría</option>
+            <option value="">Tipo</option>
+        </select>
+        <input type="search" name="" id="" />
+    </div>
+    <div>
+        <h3>Importe.</h3>
+        <input type="number" name="" id="" />
+        <input type="number" name="" id="" />
+    </div>
+    <div>
+        <h3>Fecha.</h3>
+        <input type="date" name="" id="" />
+        <input type="date" name="" id="" />
+    </div>
+    <!-- TODO: Tabla. -->
+</form>

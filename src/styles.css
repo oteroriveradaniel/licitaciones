@@ -6,7 +6,7 @@
     box-sizing: border-box;
     
     line-height: 1.5;
-    accent-color: var(--secondary);
+    accent-color: var(--primary);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -27,7 +27,7 @@ body {
 :focus-visible {
     outline: 3px solid var(--text);
     outline-offset: 3px;
-    box-shadow: 0 0 0 7px var(--secondary);
+    /* box-shadow: 0 0 0 7px var(--bg); */
 }
 
 ::selection {
@@ -143,6 +143,18 @@ datalist {
     padding: 1rem 1.5rem;
     font-size: 1rem;
     appearance: none;
+    position: relative;
+}
+/* TODO: Añadir icono al select. */
+select::after, 
+datalist:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    border: 8px solid var(--black);
 }
 
 hr {
