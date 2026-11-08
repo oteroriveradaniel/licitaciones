@@ -8,11 +8,12 @@
 
 header {
     position: sticky;
+    background-color: var(--bg);
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: transparent;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     width: 100%;
@@ -23,6 +24,7 @@ main {
     justify-content: center;
     flex: 1;
     margin: auto;
+    padding: 1rem;
 }
 
 footer {
@@ -35,6 +37,7 @@ footer {
 
 nav {
     align-content: center;
+    flex: 1 1 auto;
 }
 nav ul {
     display: flex;
@@ -52,8 +55,4 @@ nav ul li a {
     height: 64px;
     width: 64px;
     fill: var(--text);
-}
-
-[role=button] {
-    margin-left: auto;
 }

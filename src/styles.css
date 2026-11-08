@@ -140,7 +140,7 @@ select,
 datalist {
     background-color: transparent;
     border: 1px solid var(--black);
-    padding: 1rem 1.5rem;
+    padding: .5rem 1rem;
     font-size: 1rem;
     appearance: none;
     position: relative;

@@ -4,14 +4,14 @@ import { Inicio } from './inicio/inicio';
 
 export const routes: Routes = [
     {
-        path: 'licitaciones', 
-        component: Licitaciones, 
-        title: "Licitaciones | dordev", 
+        path: '',
+        component: Inicio,
+        title: "Inicio | dordev",
     },
     {
-        path: '', 
-        component: Inicio, 
-        title: "Inicio | dordev", 
+        path: 'licitaciones',
+        component: Licitaciones,
+        title: "Licitaciones | dordev",
     },
     // {path: '/licitaciones/login', component: LoginPage,},
     // {path: '**', component: NotFound},

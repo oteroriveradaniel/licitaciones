@@ -1,42 +1,49 @@
 <div id="resumen">
-    <h2>{{ 50320 | number }}<br>licitaciones.</h2>
-    <h2>{{ 180400.08 | currency }}<br>importe medio.</h2>
+    <h2>{{ cuenta() | number }}<br>resultados.</h2>
+    <h2>{{ mediana() | currency:'EUR' }}<br>mediana importe.</h2>
 </div>
 <hr>
-<form action="">
+<form (submit)="onSubmit($event)">
     <div>
-        <h3>Resultados.</h3>
+        <h3>Resultados:</h3>
         <label for="">
-            <input type="radio" name="vista" value="perfil">
-            Perfil.
+            <input type="radio" value="perfil"
+            [formField]="filterForm.results">
+            Licitaciones.
         </label>
         <label for="">
-            <input type="radio" name="vista" value="competidores">
-            Competidores.
+            <input type="radio" value="competidores"
+            [formField]="filterForm.results" >
+            Adjudicaciones.
         </label>
         <label for="">
-            <input type="radio" name="vista" value="libre">
-            Libre.
+            <input type="radio" value="todos"
+            [formField]="filterForm.results" >
+            Todos.
         </label>
     </div>
     <div>
-        <h3>Búsqueda.</h3>
-        <select name="" id="">
-            <option value="">Estado</option>
-            <option value="">Categoría</option>
-            <option value="">Tipo</option>
+        <h3>Búsqueda:</h3>
+        <select [formField]="filterForm.category">
+            <option value="">Selecciona un campo...</option>
+            @for (category of categories; track category.id) {
+                <option [value]="category.name.toLocaleLowerCase()">{{ category.name }}</option>
+            }
         </select>
-        <input type="search" name="" id="" />
+        <input type="text" [formField]="filterForm.search" />
     </div>
     <div>
-        <h3>Importe.</h3>
-        <input type="number" name="" id="" />
-        <input type="number" name="" id="" />
+        <h3>Importe:</h3>
+        <input type="number" [formField]="filterForm.minAmount" />
+        <input type="number" [formField]="filterForm.maxAmount" />
     </div>
     <div>
-        <h3>Fecha.</h3>
-        <input type="date" name="" id="" />
-        <input type="date" name="" id="" />
+        <h3>Fecha:</h3>
+        <input type="date" [formField]="filterForm.minDate" />
+        <input type="date" [formField]="filterForm.maxDate" />
     </div>
-    <!-- TODO: Tabla. -->
+    <button type="submit">FIltrar</button>
 </form>
+<hr>
+<!-- TODO: Tabla. -->
+<h3>Tabla</h3>
