@@ -100,19 +100,21 @@ export class Licitaciones implements OnInit {
     if (credentials.minDate) params = params.append('minDate', credentials.minDate.toString());
     if (credentials.maxDate) params = params.append('maxDate', credentials.maxDate.toString());
 
-    this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: {
-        results: credentials['results'] || null,
-        category: credentials['category'] || null,
-        search: credentials['search'] || null,
-        minAmount: credentials['minAmount'] || null,
-        maxAmount: credentials['maxAmount'] || null,
-        minDate: credentials['minDate'] ? credentials['minDate'].toISOString().split('T')[0] : null,
-        maxDate: credentials['maxDate'] ? credentials['maxDate'].toISOString().split('T')[0] : null,
-      },
-      queryParamsHandling: 'merge', // Mantiene otros parámetros que existan (ej. paginación)
-    });
+    if (event) {
+      this.router.navigate([], {
+        relativeTo: this.route,
+        queryParams: {
+          results: credentials['results'] || null,
+          category: credentials['category'] || null,
+          search: credentials['search'] || null,
+          minAmount: credentials['minAmount'] || null,
+          maxAmount: credentials['maxAmount'] || null,
+          minDate: credentials['minDate'] ? credentials['minDate'].toISOString().split('T')[0] : null,
+          maxDate: credentials['maxDate'] ? credentials['maxDate'].toISOString().split('T')[0] : null,
+        },
+        queryParamsHandling: 'merge', // Mantiene otros parámetros que existan (ej. paginación)
+      });
+    }
 
     if (isPlatformBrowser(this.platformId)) {
       this.http.get<Licitacion[]>('/api/', { params })
