@@ -11,7 +11,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="684018943408500259" datatype="html">
-        <source> Descargar CV</source>
+        <source>Descargar CV</source>
         <target>Download CV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.html</context>
@@ -19,8 +19,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5461361864106246695" datatype="html">
-        <source>Última actualización <x id="INTERPOLATION" equiv-text="{{&quot;11/07/2026&quot; | date}}"/></source>
-        <target>Last update <x id="INTERPOLATION" equiv-text="{{&quot;11/07/2026&quot; | date}}"/></target>
+        <source>Última actualización <x id="INTERPOLATION" equiv-text="{{&quot;11-08-2026&quot; | date}}"/></source>
+        <target>Last update <x id="INTERPOLATION" equiv-text="{{&quot;11-08-2026&quot; | date}}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">27,28</context>
@@ -28,10 +28,66 @@
       </trans-unit>
       <trans-unit id="5949841979829170796" datatype="html">
         <source>Desarrollador y diseñador web.</source>
-        <target>Web designer and developer.</target>
+        <target>Web developer and designer.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/inicio/inicio.html</context>
           <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8892660463778189339" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ cuenta() | number }}"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>resultados.</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ cuenta() | number }}"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>results.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6853542503209710082" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ mediana() | currency:&apos;EUR&apos; }}"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>mediana importe.</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ mediana() | currency:&apos;EUR&apos; }}"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>median value.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7082430853016663190" datatype="html">
+        <source>Búsqueda:</source>
+        <target>Search:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5561311361755633796" datatype="html">
+        <source>Selecciona un campo...</source>
+        <target>Select a field...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2036672984354609990" datatype="html">
+        <source>Importe:</source>
+        <target>Value:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2444499384194106860" datatype="html">
+        <source>Fecha:</source>
+        <target>Date:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="796597790333442106" datatype="html">
+        <source>Filtrar</source>
+        <target>Filter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">45,46</context>
         </context-group>
       </trans-unit>
     </body>

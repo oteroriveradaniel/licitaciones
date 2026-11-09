@@ -1,5 +1,5 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
-import { CurrencyPipe, DecimalPipe } from '@angular/common';
+import { Component, Inject, inject, OnInit, signal, PLATFORM_ID } from '@angular/core';
+import { CurrencyPipe, DecimalPipe, isPlatformBrowser } from '@angular/common';
 import { FormField, form } from '@angular/forms/signals';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -33,6 +33,10 @@ interface CuentaResponse {
 })
 
 export class Licitaciones implements OnInit {
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+  ) {}
+
   // TODO: Obtener de la base de datos.
   // Cargar desde CPV en función de los campos de texto.
   categories = [
@@ -110,7 +114,8 @@ export class Licitaciones implements OnInit {
       queryParamsHandling: 'merge', // Mantiene otros parámetros que existan (ej. paginación)
     });
 
-    this.http.get<Licitacion[]>('/api/', { params })
+    if (isPlatformBrowser(this.platformId)) {
+      this.http.get<Licitacion[]>('/api/', { params })
       .subscribe({
         next: (config) => {
           console.log('Datos recibidos:', config);
@@ -130,5 +135,6 @@ export class Licitaciones implements OnInit {
           console.error('Error en la petición:', error);
         }
       });
+    }
   }
 }

@@ -1,6 +1,6 @@
 <div id="resumen">
-    <h2>{{ cuenta() | number }}<br>resultados.</h2>
-    <h2>{{ mediana() | currency:'EUR' }}<br>mediana importe.</h2>
+    <h2 i18n>{{ cuenta() | number }}<br>resultados.</h2>
+    <h2 i18n>{{ mediana() | currency:'EUR' }}<br>mediana importe.</h2>
 </div>
 <hr>
 <form (submit)="onSubmit($event)">
@@ -8,24 +8,24 @@
         <h3>Resultados:</h3>
         <label for="">
             <input type="radio" value="perfil"
-            [formField]="filterForm.results">
+            [formField]="filterForm.results" i18n>
             Licitaciones.
         </label>
         <label for="">
             <input type="radio" value="competidores"
-            [formField]="filterForm.results" >
+            [formField]="filterForm.results" i18n>
             Adjudicaciones.
         </label>
         <label for="">
             <input type="radio" value="todos"
-            [formField]="filterForm.results" >
+            [formField]="filterForm.results" i18n>
             Todos.
         </label>
     </div>
     <div>
-        <h3>Búsqueda:</h3>
+        <h3 i18n>Búsqueda:</h3>
         <select [formField]="filterForm.category">
-            <option value="">Selecciona un campo...</option>
+            <option value="" i18n>Selecciona un campo...</option>
             @for (category of categories; track category.id) {
                 <option [value]="category.name.toLocaleLowerCase()">{{ category.name }}</option>
             }
@@ -33,16 +33,16 @@
         <input type="text" [formField]="filterForm.search" />
     </div>
     <div>
-        <h3>Importe:</h3>
+        <h3 i18n>Importe:</h3>
         <input type="number" [formField]="filterForm.minAmount" />
         <input type="number" [formField]="filterForm.maxAmount" />
     </div>
     <div>
-        <h3>Fecha:</h3>
+        <h3 i18n>Fecha:</h3>
         <input type="date" [formField]="filterForm.minDate" />
         <input type="date" [formField]="filterForm.maxDate" />
     </div>
-    <button type="submit">FIltrar</button>
+    <button type="submit" i18n>Filtrar</button>
 </form>
 <hr>
 <!-- TODO: Tabla. -->
