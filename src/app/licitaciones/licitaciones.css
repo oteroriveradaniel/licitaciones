@@ -41,3 +41,16 @@ form div {
 form h3 {
     width: 150px;
 }
+
+li {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+li p {
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}

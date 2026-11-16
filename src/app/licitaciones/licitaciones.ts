@@ -47,6 +47,7 @@ export class Licitaciones implements OnInit {
 
   cuenta = signal(0);
   mediana = signal(0);
+  licitaciones = signal(<Licitacion[]>[]);
 
   // TODO: Obtener de la base de datos.
   // Perfil configuración.
@@ -120,7 +121,7 @@ export class Licitaciones implements OnInit {
       this.http.get<Licitacion[]>('/api/', { params })
       .subscribe({
         next: (config) => {
-          console.log('Datos recibidos:', config);
+          this.licitaciones.set(config);
         },
         error: (error) => {
           console.error('Error en la petición:', error);

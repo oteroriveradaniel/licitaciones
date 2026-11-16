@@ -1,10 +1,13 @@
+<h1 i18n>Licitaciones del Ayuntamiento de A Coruña</h1>
+<h2 i18n>Desde 2013.</h2>
+<br>
 <div id="resumen">
     <h2 i18n>{{ cuenta() | number }}<br>resultados.</h2>
     <h2 i18n>{{ mediana() | currency:'EUR' }}<br>mediana importe.</h2>
 </div>
 <hr>
 <form (submit)="onSubmit($event)">
-    <div>
+    <!-- <div>
         <h3>Resultados:</h3>
         <label for="">
             <input type="radio" value="perfil"
@@ -31,7 +34,7 @@
             }
         </select>
         <input type="text" [formField]="filterForm.search" />
-    </div>
+    </div> -->
     <div>
         <h3 i18n>Importe:</h3>
         <input type="number" [formField]="filterForm.minAmount" />
@@ -46,4 +49,13 @@
 </form>
 <hr>
 <!-- TODO: Tabla. -->
-<h3>Tabla</h3>
+<h2 i18n>Resultados: Mostrando 50.</h2>
+<br>
+<ul>
+    @for (item of licitaciones(); track item.id) {
+        <li>
+            <p [title]="item.title">{{ item.title }}</p>
+            <p>{{ item.valueAmount | currency: 'EUR' }}</p>
+        </li>
+    }
+</ul>

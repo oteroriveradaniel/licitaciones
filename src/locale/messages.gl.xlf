@@ -34,6 +34,22 @@
           <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1327206093631818031" datatype="html">
+        <source>Licitaciones del Ayuntamiento de A Coruña</source>
+        <target>Licitacións do Concello da Coruña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5872886393270200234" datatype="html">
+        <source>Desde 2013.</source>
+        <target>Desde 2013.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8892660463778189339" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ cuenta() | number }}"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>resultados.</source>
         <target><x id="INTERPOLATION" equiv-text="{{ cuenta() | number }}"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>resultados.</target>
@@ -88,6 +104,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
           <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7578177651989886073" datatype="html">
+        <source>Resultados: Mostrando 50.</source>
+        <target>Resultados: Mostrando 50.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">52,54</context>
         </context-group>
       </trans-unit>
     </body>
