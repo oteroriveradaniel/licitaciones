@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="es-ES" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="5003254313850920652" datatype="html">
-        <source>Licitaciones</source>
+      <trans-unit id="4328188201241798009" datatype="html">
+        <source>Licitaciones (Demo)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">14,15</context>
@@ -16,8 +16,8 @@
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5461361864106246695" datatype="html">
-        <source>Última actualización <x id="INTERPOLATION" equiv-text="{{&quot;11-16-2026&quot; | date}}"/></source>
+      <trans-unit id="2865544794301399048" datatype="html">
+        <source>Última actualización <x id="INTERPOLATION" equiv-text="{{&quot;11-16-2026&quot; | date}}"/>.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.html</context>
           <context context-type="linenumber">27,28</context>
@@ -58,32 +58,60 @@
           <context context-type="linenumber">6,8</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2036672984354609990" datatype="html">
-        <source>Importe:</source>
+      <trans-unit id="1881314525617287984" datatype="html">
+        <source>Importe</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
           <context context-type="linenumber">39,40</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2444499384194106860" datatype="html">
-        <source>Fecha:</source>
+      <trans-unit id="1956575616349236554" datatype="html">
+        <source>Mínimo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3247133465095072852" datatype="html">
+        <source>Máximo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7944442845393176638" datatype="html">
+        <source>Fecha</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4155087585589578541" datatype="html">
+        <source>Desde</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2987084982624145537" datatype="html">
+        <source>Hasta</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
+          <context context-type="linenumber">56,57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5656265501179877938" datatype="html">
         <source>Filtrar</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
-          <context context-type="linenumber">48,49</context>
+          <context context-type="linenumber">61,62</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7578177651989886073" datatype="html">
-        <source>Resultados: Mostrando 50.</source>
+      <trans-unit id="522035960347194540" datatype="html">
+        <source>Resultados limitados a 50.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/licitaciones/licitaciones.html</context>
-          <context context-type="linenumber">52,54</context>
+          <context context-type="linenumber">65,67</context>
         </context-group>
       </trans-unit>
     </body>

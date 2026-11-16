@@ -36,21 +36,33 @@
         <input type="text" [formField]="filterForm.search" />
     </div> -->
     <div>
-        <h3 i18n>Importe:</h3>
-        <input type="number" [formField]="filterForm.minAmount" />
-        <input type="number" [formField]="filterForm.maxAmount" />
+        <h3 i18n>Importe</h3>
+        <label>
+            <small i18n>Mínimo</small>
+            <input type="number" [formField]="filterForm.minAmount" />
+        </label>
+        <label>
+            <small i18n>Máximo</small>
+            <input type="number" [formField]="filterForm.maxAmount" />
+        </label>
     </div>
     <div>
-        <h3 i18n>Fecha:</h3>
-        <input type="date" [formField]="filterForm.minDate" />
-        <input type="date" [formField]="filterForm.maxDate" />
+        <h3 i18n>Fecha</h3>
+        <label>
+            <small i18n>Desde</small>
+            <input type="date" [formField]="filterForm.minDate" />
+        </label>
+        <label>
+            <small i18n>Hasta</small>
+            <input type="date" [formField]="filterForm.maxDate" />
+        </label>
     </div>
+    <br>
     <button type="submit" i18n>Filtrar</button>
 </form>
 <hr>
 <!-- TODO: Tabla. -->
-<h2 i18n>Resultados: Mostrando 50.</h2>
-<br>
+<h2 i18n>Resultados limitados a 50.</h2>
 <ul>
     @for (item of licitaciones(); track item.id) {
         <li>

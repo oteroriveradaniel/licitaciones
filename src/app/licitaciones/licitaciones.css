@@ -25,32 +25,42 @@ label {
     align-items: center;
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 1000px;
-}
-
 form div {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+form button {
+    width: 100%;
 }
 
 form h3 {
     width: 150px;
 }
 
+label {
+    position: relative;
+    margin-top: 2rem;
+}
+label small {
+    position: absolute;
+    top: -1.5rem;
+    font-weight: bold;
+    left: 0;
+}
+
 li {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 1rem 0;
 }
-li p {
+li p:first-of-type {
     overflow: hidden;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
     text-overflow: ellipsis;
+}
+li p:last-of-type {
+    flex: 0 0 100px;
 }

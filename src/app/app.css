@@ -25,6 +25,7 @@ main {
     flex: 1;
     margin: auto;
     padding: 1rem;
+    max-width: 1000px;
 }
 
 footer {
@@ -32,6 +33,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: right;
     text-wrap: balance;
 }
 
