@@ -11,7 +11,7 @@ interface Licitacion {
 }
 
 interface FilterData {
-  results: "perfil" | "competidores" | "libre";
+  results: "perfil" | "competidores" | "libre" | "";
   category: string;
   search: string;
   minAmount: number | null;
@@ -53,7 +53,7 @@ export class Licitaciones implements OnInit {
   // Perfil configuración.
 
   filterModel = signal<FilterData>({
-    results: "perfil",
+    results: "",
     category: "",
     search: "",
     minAmount: null,
@@ -71,7 +71,7 @@ export class Licitaciones implements OnInit {
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.filterModel.set({
-        results: params['results'] || "perfil",
+        results: params['results'] || "",
         category: params['category'] || "",
         search: params['search'] || "",
         minAmount: Number(params['minAmount']) || null,
@@ -94,8 +94,8 @@ export class Licitaciones implements OnInit {
     let params = new HttpParams();
 
     if (credentials.results) params = params.append('results', credentials.results.toString());
-    if (credentials.category) params = params.append('category', credentials.category); // Corregido 'categoru'
-    if (credentials.search) params = params.append('search', credentials.search);
+    if (credentials.category) params = params.append('category', credentials.category.toString());
+    if (credentials.search) params = params.append('search', credentials.search.toString());
     if (credentials.minAmount) params = params.append('minAmount', credentials.minAmount.toString());
     if (credentials.maxAmount) params = params.append('maxAmount', credentials.maxAmount.toString());
     if (credentials.minDate) params = params.append('minDate', credentials.minDate.toString());
